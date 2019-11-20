@@ -24,11 +24,15 @@ body {
 img {
   display: block;
   width: 100%;
-
 }
 
-div:nth-child(even) {
+.dino:nth-child(even) {
   display: none;
+}
+
+.dino-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 25em) {
@@ -36,47 +40,48 @@ div:nth-child(even) {
     display: inline-block;
   }
 
-  div:nth-child(odd) {
+  .dino:nth-child(odd) {
     display: inline-block;
   }
 
   .dino {
-    width: 49%;
+    width: 50%;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  .dino {
-    width: 100%;
-  }
-
-  img:nth-child(2), img:nth-child(3) img:nth-child(4){
+.dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4){
   display: inline-block;
-  width: 32%;
+  width: 33.333%;
   }
 
-  img:first-child {
+.dino:first-child {
     display: none;
+  }
+
+  .dino {
+    margin: 0;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
-  img {
-    width: 100%;
-  }
 
-  img:nth-child(2), img:nth-child(3) img:nth-child(4) {
+.dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4) {
     display: inline-block;
-    width: 24%;
+    width: 25%;
   }
 
 
-  img:first-child {
+  .dino:first-child {
     display: inline-block;
-    width: 24%;
+    width: 25%;
+  }
+
+  .dino {
+    margin: 0;
   }
 
 }
