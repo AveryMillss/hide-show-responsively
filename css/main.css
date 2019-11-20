@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: .5em;
 }
 
 img {
@@ -36,6 +36,7 @@ img {
 }
 
 @media only screen and (min-width: 25em) {
+
   .dino:nth-child(even) {
     display: inline-block;
   }
@@ -52,12 +53,12 @@ img {
 
 @media only screen and (min-width: 38em) {
 
-.dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4){
-  display: inline-block;
-  width: 33.333%;
+  .dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4) {
+    display: inline-block;
+    width: 33.333%;
   }
 
-.dino:first-child {
+  .dino:first-child {
     display: none;
   }
 
@@ -69,11 +70,10 @@ img {
 
 @media only screen and (min-width: 60em) {
 
-.dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4) {
+  .dino:nth-child(2), .dino:nth-child(3), .dino:nth-child(4) {
     display: inline-block;
     width: 25%;
   }
-
 
   .dino:first-child {
     display: inline-block;
